@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Student Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="column left"></div>
+      <div class="column middle">
+        <form>
+          <p>Please fill out some personal details:</p>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" /><br />
+
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" /><br />
+
+          <label for="street_address">Street Address:</label>
+          <input type="text" id="street_address" name="street_address" /><br />
+
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" /><br />
+
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" /><br />
+
+          <label for="zipcode">Zipcode:</label>
+          <input type="text" id="zipcode" name="zipcode" /><br />
+
+          <label for="telephone_number">Telephone:</label>
+          <input
+            type="text"
+            id="telephone_number"
+            name="telephone_number"
+          /><br />
+
+          <label for="email_address">Email:</label>
+          <input type="text" id="email_address" name="email_address" /><br />
+
+          <label for="survey_date">Date:</label>
+          <input type="text" id="survey_date" name="survey_date" /><br />
+          <br />
+          <br />
+
+          
+            <p>Please indicate what you liked most about your visit:</p>
+            <input
+              type="checkbox"
+              id="student"
+              name="student"
+              value="Students"
+            />
+            <label for="student"> Students</label><br />
+            <input
+              type="checkbox"
+              id="location"
+              name="location"
+              value="Location"
+            />
+            <label for="location"> Location</label><br />
+            <input type="checkbox" id="campus" name="campus" value="Campus" />
+            <label for="campus"> Campus</label><br />
+
+            <input
+              type="checkbox"
+              id="atmosphere"
+              name="atmosphere"
+              value="Atmosphere"
+            />
+            <label for="atmosphere"> Atmosphere</label><br />
+
+            <input
+              type="checkbox"
+              id="dorm_rooms"
+              name="dorm_rooms"
+              value="DormRooms"
+            />
+            <label for="dorm_rooms"> Dorm Rooms</label><br />
+
+            <input type="checkbox" id="sports" name="sports" value="Sports" />
+            <label for="sports"> Sports</label><br />
+          
+
+          <br />
+          <br />
+
+          
+            <legend>Tell us how you heard about us:</legend>
+            <br>
+            <label for="radio-1">Friends</label>
+            <input type="radio" name="radio-1" id="radio-1" /><br />
+            <label for="radio-2">Television</label>
+            <input type="radio" name="radio-1" id="radio-2" /><br />
+            <label for="radio-3">Internet</label>
+            <input type="radio" name="radio-1" id="radio-3" /><br />
+            <label for="radio-4">Other</label>
+            <input type="radio" name="radio-1" id="radio-4" /><br />
+          
+
+          <br /><br />
+
+          <label for="likelihood"
+            >Tell us how likely you are to recommend this shcool to a
+            friend</label
+          >
+
+          <select name="likelihood" id="likelihood">
+            <option value="2">Very Likely</option>
+            <option value="1">Likely</option>
+            <option value="0">Unlikely</option>
+          </select>
+          <br /><br />
+
+          <label for="raffle"
+            >Raffle numbers! Enter 10 number separated by commas:</label
+          >
+          <input type="text" id="raffle" name="raffle" /><br />
+
+          <label for="comments">Enter any additional comments:</label>
+          <input type="text" id="comments" name="comments" /><br />
+
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Cancel" />
+        </form>
+      </div>
+      <div class="column right"></div>
+    </div>
+  </body>
+</html>
