@@ -16,7 +16,7 @@ public class TestController {
 
     @GetMapping("/test")
     public String index() {
-        return "Greetings from Spring Boot hosted on Tomcat via Kubernetes!";
+        return "Greetings from Spring Boot hosted on Tomcat via Kubernetes with an updated image!";
     }
 
 }
