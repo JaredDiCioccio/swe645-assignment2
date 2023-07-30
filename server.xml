@@ -28,7 +28,7 @@
   <!-- APR library loader. Documentation at /docs/apr.html -->
   <Listener className="org.apache.catalina.core.AprLifecycleListener" SSLEngine="on" />
   <!-- Prevent memory leaks due to use of particular java/javax APIs-->
-  <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener" classesToInitialize="com.mysql.jdbc.NonRegisteringDriver" />
+  <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener"/>
   <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener" />
   <Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener" />
 
@@ -162,7 +162,7 @@
       <Host name="localhost"  appBase="webapps"
             unpackWARs="true" autoDeploy="true">
 
-<!--        <Context path="" docBase="survey" debug="0" reloadable="true"></Context>-->
+        <Context path="" docBase="assignment3" debug="0" reloadable="true"></Context>
 
         <!-- SingleSignOn valve, share authentication between web applications
              Documentation at: /docs/config/valve.html -->

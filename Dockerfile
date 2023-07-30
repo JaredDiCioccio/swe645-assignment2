@@ -2,7 +2,7 @@ FROM tomcat:9.0.76-jdk21-openjdk-slim-bullseye
 
 LABEL maintainer="jdiciocc@gmu.edu"
 
-#COPY  ./server.xml /usr/local/tomcat/conf/server.xml
+COPY  ./server.xml /usr/local/tomcat/conf/server.xml
 COPY  ./src/main/resources/application.properties /usr/local/tomcat/conf
 
 RUN echo "# Add app_conf to Tomcat CLASSPATH" > $CATALINA_HOME/bin/setenv.sh
