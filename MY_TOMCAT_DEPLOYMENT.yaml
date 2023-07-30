@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:  
+  labels:
+    app: mytomcatdeployment  
+spec:  
+  replicas: 3  
+  selector:
+    matchLabels:
+      app: mytomcatdeployment
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:      
+      labels:
+        app: mytomcatdeployment
+    spec:
+      containers:
+      - image: romple/swe645-assignment2
+        imagePullPolicy: Always
+        name: swe645-assignment2        
+      restartPolicy: Always
