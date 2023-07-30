@@ -13,5 +13,5 @@ EXPOSE 8080
 
 COPY  ./target/assignment3.war /usr/local/tomcat/webapps/
 
-#CMD [ "catalina.sh", "run" ]
-CMD ["bash"]
+CMD [ "catalina.sh", "run" ]
+#CMD ["bash"]
