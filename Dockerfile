@@ -11,7 +11,7 @@ RUN chmod 750 $CATALINA_HOME/bin/setenv.sh
 
 EXPOSE 8080
 
-COPY  ./target/assignment3.war /usr/local/tomcat/webapps/
+COPY  ./target/assignment3.war /usr/local/tomcat/webapps/ROOT.war
 
 CMD [ "catalina.sh", "run" ]
 #CMD ["bash"]
